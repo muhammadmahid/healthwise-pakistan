@@ -1,10 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>HealthWise Pakistan</title>
+    <title>HealthWise Pakistan | First Aid & Health Literacy</title>
 
     <style>
         * {
@@ -15,9 +16,9 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: #f5f9f8;
-            color: #18332f;
             line-height: 1.6;
+            background: #f5f9fc;
+            color: #1f2937;
         }
 
         header {
@@ -26,212 +27,118 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid #e5eeee;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
+        header h2 {
+            color: #0f766e;
         }
 
         nav a {
             text-decoration: none;
-            color: #18332f;
-            margin-left: 25px;
+            color: #374151;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #0f766e;
         }
 
         .hero {
-            padding: 90px 8%;
             text-align: center;
-            background: white;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #e0f7f5, #f5f9fc);
         }
 
         .hero h1 {
-            font-size: 52px;
-            margin-bottom: 20px;
+            font-size: 42px;
+            max-width: 800px;
+            margin: auto;
+            color: #111827;
         }
 
         .hero p {
             max-width: 650px;
-            margin: 0 auto 30px;
-            font-size: 19px;
-            color: #55706b;
+            margin: 20px auto;
+            font-size: 18px;
+            color: #4b5563;
         }
 
-        .button {
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
             display: inline-block;
-            padding: 14px 25px;
+            padding: 13px 22px;
             margin: 5px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
-            background: #1f7568;
+        }
+
+        .primary {
+            background: #0f766e;
             color: white;
         }
 
-        .button.secondary {
-            background: #e8f2f0;
-            color: #1f7568;
+        .secondary {
+            background: white;
+            color: #0f766e;
+            border: 2px solid #0f766e;
         }
 
-        .topics {
-            padding: 70px 8%;
+        .section {
+            padding: 60px 8%;
         }
 
-        .topics h2 {
+        .section h2 {
             text-align: center;
-            margin-bottom: 40px;
-            font-size: 34px;
+            margin-bottom: 35px;
+            font-size: 30px;
         }
 
-        .grid {
+        .cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
         }
 
+        /* Topic cards */
         .card {
             background: white;
             padding: 25px;
-            border-radius: 12px;
-            border: 1px solid #e0ebe8;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 7px 20px rgba(0,0,0,0.12);
         }
 
         .card h3 {
             margin-bottom: 10px;
+            color: #0f766e;
         }
 
         .card p {
-            color: #60736f;
+            color: #6b7280;
         }
 
         .notice {
-            margin: 20px 8% 60px;
+            max-width: 900px;
+            margin: 0 auto;
             padding: 25px;
-            border-radius: 10px;
-            background: #fff7df;
-            color: #624f1c;
-        }
-
-        footer {
-            background: #18332f;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
-    </style>
-</head>
-
-<body>
-
-<header>
-    <div class="logo">🩺 HealthWise Pakistan</div>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">First Aid</a>
-        <a href="#">Quiz</a>
-        <a href="#">About</a>
-    </nav>
-</header>
-
-
-<section class="hero">
-
-    <h1>Know What To Do When Every Second Matters.</h1>
-
-    <p>
-        Simple, evidence-based first-aid and health-literacy
-        education for students, families, and communities in Pakistan.
-    </p>
-
-    <a href="#" class="button">Learn First Aid</a>
-
-    <a href="#" class="button secondary">
-        Test Your Knowledge
-    </a>
-
-</section>
-
-
-<section class="topics">
-
-    <h2>Learn First Aid</h2>
-
-    <div class="grid">
-
-       <a href="bleeding.html" class="card">
-    <h3>🩸 Severe Bleeding</h3>
-    <p>Learn what to do when someone is bleeding heavily.</p>
-</a>
-
-        <div class="card">
-            <h3>🔥 Burns</h3>
-            <p>
-                Understand immediate first-aid measures for burns
-                and situations requiring medical attention.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>🫁 Choking</h3>
-            <p>
-                Learn how to recognize choking and respond
-                appropriately.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>😵 Fainting</h3>
-            <p>
-                Learn how to respond safely when someone suddenly
-                becomes unconscious or faints.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>🧠 Seizures</h3>
-            <p>
-                Learn how to keep someone experiencing a seizure
-                safe and when to seek emergency care.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>🦴 Fractures</h3>
-            <p>
-                Understand basic first-aid principles for suspected
-                fractures and serious injuries.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<div class="notice">
-
-    <strong>Important:</strong>
-
-    HealthWise Pakistan provides educational information
-    and does not replace professional medical care.
-
-    In a serious or life-threatening emergency, seek
-    professional emergency medical assistance.
-
-</div>
-
-
-<footer>
-
-    <p>HealthWise Pakistan</p>
-
-    <p>
-        Evidence-based health literacy & first-aid education
-    </p>
-
-</footer>
-
-</body>
-</html>
+            background: #fff7ed;
+            border-left: 5px solid #f97316;
+            border-ra
+```
